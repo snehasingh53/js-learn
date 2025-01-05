@@ -1,0 +1,48 @@
+ 1.) Global execution conntext - "this" variable me refer kr diya jata hai 
+     "this" - in browser "is Window"
+ 2.) Function Execution Context-
+ 3.) Eval Execution Context-
+
+
+ javascript code is run in 2 phases , memory creation phase or creation phase , in this only memory allocation occurs 
+ another phase is Execution phase
+
+
+ let val1=10;
+ let val2=5;
+ function addNum(num1,num2){
+    let total= num1+num2
+    return total
+ }
+ let result = addNum(val1,val2)
+ let result2 = addNum(10,2)
+
+ step 1: Global execution or environment-> allocate "this" ke andar
+ step2: Memory Phase: 
+                     val1 ->undefined
+                     val2 -> undefined
+                     addNum->definition
+                     result1 -> undefined
+                     result2 ->undefined
+ step3: Execution Phase:
+                     val1 <-10
+                     val2 <-5
+                     addNum-> Execution Context 
+                                 => new environment + execution thread
+                                     Memory Phase, 
+                                            val1-> undefined
+                                            val2->undefined
+                                            total->undefined
+                                     and execution phase
+                                            num1->10
+                                            num2->5
+                                            total->15   return to global execution context 
+                                 after this execution context will get deleted
+
+  step4: new variable environment + thread
+           memory phase , execution phase
+
+
+
+
+           
