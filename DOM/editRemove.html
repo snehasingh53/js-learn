@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Element </title>
+</head>
+<body style="background-color:#212121 ; color:#fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li=document.createElement("li")
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').
+        appendChild(li) // harr barr traversve kr raha hai 
+    }
+    addLanguage("python")
+    addLanguage("typeScript")
+ 
+    function addOptiLang(langName){
+        const li=document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)
+} // more optimized kyuki pura tree traverse nahi krna pdega
+addOptiLang("golang")
+
+//Edit
+  const second_lang=document.querySelector("li:nth-child(2)")
+  // second_lang.innerHTML="Mojo"
+  const new_li=document.createElement('li')
+  new_li.textContent="Mojo"
+  second_lang.replaceWith(new_li)
+
+// edit example 2 
+const first_lang= document.querySelector("li:first-child")
+first_lang.outerHTML="<li>TypeScipt</li>"
+  
+// remove
+
+const last_lang= document.querySelector("li:last-child")
+last_lang.remove()
+</script>
+</html>
