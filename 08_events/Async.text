@@ -1,0 +1,23 @@
+Javascript 
+        - synchronous
+        - single threaded            
+        this is default javascript behaviour
+
+
+Execution Context
+        - execute one line of code at a time 
+        |
+        |-> concole.log() --1
+        |
+        |-> console.log() --2
+        v
+        call stack            Memory Heap
+
+
+Blocking code             vs      Non Blocking code
+     /                                     \
+    /                                       \
+ Block the flow of prgrm                 Does not block Execution
+  |                                           |
+  v                                           v
+  Read file sync                             Read file Async
