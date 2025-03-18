@@ -1,2 +1,0 @@
-querySelector(): Returns the first matching element within the document 
-querySelectorAll():Returns a NodeList (a collection) of all matching elements within the document 
