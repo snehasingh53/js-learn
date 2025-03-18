@@ -39,3 +39,11 @@ finally{
     console.log("I will run everytime")
 }
 //finally block : runs everytime
+
+// throw : can help create custom error 
+try{
+  console.log(x)
+}
+catch(e){
+    throw new error("Bhai pehle declare krdo phir print krna ")
+}
