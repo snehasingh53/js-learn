@@ -1,5 +1,5 @@
 
- // in Js arrays are resizable and mix of different type pof data 
+ // in Js arrays are resizable and mix of different type of data 
 
 const myArr=[ 0,1,2]
 console.log(myArr[0]) // method 1 
