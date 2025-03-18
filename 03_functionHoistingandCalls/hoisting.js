@@ -32,3 +32,12 @@ class Human{
 
 }
 //const obj1= new Human(); works properly 
+
+
+
+// function call :stack is used 
+
+
+/*functions are called first class citizens because it play mant roles 
+.>they can be passed as arguments , return function, assign to variables, us function in DS , pass as property
+*/
