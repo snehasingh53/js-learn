@@ -21,3 +21,17 @@ Blocking code             vs      Non Blocking code
   |                                           |
   v                                           v
   Read file sync                             Read file Async
+                                           ex setTimeOut()
+
+
+
+ Asynchronous JavaScript
+Code execution does not wait for an operation to complete.
+Long-running tasks (e.g., API calls, file reading) are delegated to Web APIs or Node.js APIs.
+Uses callbacks, Promises, and async/await to handle execution flow.
+
+
+Synchronous JavaScript
+Code executes line by line, one operation at a time.
+The next operation must wait for the current one to complete before executing.
+If an operation takes a long time (e.g., fetching data), it blocks the execution of further code.
